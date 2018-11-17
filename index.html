@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Artogo 帶你看展 | November 17, 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My event will be so awesome. Check this site to see how much longer is left until. Get excited!">
+  <meta name="author" content="">
+  <meta property="og:image" content="./d_01.svg" />
+  <meta property="og:title" content=" | November 17, 2018" />
+  <meta property="og:url" content="http://countdown.yourdomain.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Font from google -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  <!-- bootstrap -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- countdown css -->
+  <link rel="stylesheet" href="assets/css/jquery.countdown.css">
+  <!-- custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+  #main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  .row , h2 {
+    margin: 0;
+  }
+
+  </style>
+
+</head>
+
+<body>
+  <div id="main_container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <!-- <h1 class="background-highlight">Artogo 帶你看展</h1> -->
+        <img src="./d_01.svg" style="max-width:300px" />
+      </div>
+    </div>
+    <!-- /row -->
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+
+          <h3>Comming soon...</h3>
+        <div id="defaultCountdown"></div>
+      </div>
+    </div>
+    <!-- /row -->
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 class="background-highlight">Saturday November 17, 2018</h2>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- javascript includes
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <!-- jquery  -->
+  <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+
+  <!-- countdown code -->
+  <script src="assets/js/jquery.countdown.min.js"></script>
+
+  <!-- start the countdown when the page loads -->
+  <script type="text/javascript">
+    $(function() {
+      var holiday = new Date();
+      holiday = new Date("2018-11-17 18:00:00 +0800");
+      $('#defaultCountdown').countdown({
+        until: holiday
+      });
+      $('#year').text(holiday.getFullYear());
+    });
+  </script>
+  <!-- end of javascript includes  -->
+
+</body>
+
+</html>
